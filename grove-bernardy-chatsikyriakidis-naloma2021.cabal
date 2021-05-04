@@ -1,13 +1,13 @@
 cabal-version:       >=1.10
 name:                abstract-semantics-with-effects
 version:             0.1.0.0
-synopsis:            Code for Grove, Bernardy, and Chatsikyriakidis 2021.
+synopsis:            Code for Grove, Bernardy, and Chatzikyriakidis 2021.
 description:         
 -- bug-reports:
 license:             MIT
 license-file:        LICENSE
-author:              Julian Grove, Jean-Philippe Bernardy, and Stergios Chatsikyriakidis
-maintainer:          firstname.lastname@gu.se
+author:              Julian Grove, Jean-Philippe Bernardy, and Stergios Chatzikyriakidis
+maintainer:          julian.grove@gmail.com
 -- copyright:
 -- category:
 build-type:          Simple
