@@ -1,0 +1,83 @@
+cabal-version:       >=1.10
+name:                grove-bernardy-chatzikyriakidis-naloma2021
+version:             0.1.0.0
+synopsis:            Code for Grove, Bernardy, and Chatzikyriakidis 2021.
+description:         
+-- bug-reports:
+license:             MIT
+license-file:        LICENSE
+author:              Julian Grove, Jean-Philippe Bernardy, and Stergios Chatzikyriakidis
+maintainer:          julian.grove@gmail.com
+-- copyright:
+-- category:
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+
+library 
+  exposed-modules: Representations.Algebraic
+                 , Representations.Representations
+                 , Representations.Bayesian.Bayesian
+                 , Representations.FOL.FOL
+                 , Fragment.Fragment
+  other-modules: Representations.Bayesian.Space
+                 Representations.Eval.Model
+                 FOL.CNF
+                 FOL.Connection
+                 FOL.FOL
+                 FOL.Regularity
+                 FOL.Search
+                 FOL.Solver
+                 FOL.Tableau
+                 FOL.Unification
+                 
+  hs-source-dirs: src
+  build-depends: base
+               , mtl
+               , logict
+               , Cabal
+               , gasp
+               , statistics
+               , mwc-random
+               , random
+               , containers
+               , QuickCheck
+               , vector
+               , process
+               , pretty
+               , groom
+               , logict
+
+  default-language: Haskell2010
+
+executable rsa
+  other-modules: Representations.Algebraic
+               , Representations.Eval.Model
+               , Representations.Bayesian.Bayesian
+               , Representations.Bayesian.Probability
+               , Representations.FOL.FOL
+               , Representations.Representations
+               , FOL.CNF
+               , FOL.Connection
+               , FOL.FOL
+               , FOL.Regularity
+               , FOL.Search
+               , FOL.Solver
+               , FOL.Tableau
+               , FOL.Unification
+               , Fragment.Fragment
+               , Fragment.RSA_Examples
+  main-is: Main.hs
+  hs-source-dirs: app
+                  src
+  build-depends: base
+               , mtl
+               , logict
+               , gasp
+               , statistics
+               , containers
+               , QuickCheck
+               , vector
+               , pretty
+               , process
+  default-language: Haskell2010
+  
