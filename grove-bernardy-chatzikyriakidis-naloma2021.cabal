@@ -2,7 +2,10 @@ cabal-version:       >=1.10
 name:                grove-bernardy-chatzikyriakidis-naloma2021
 version:             0.1.0.0
 synopsis:            Code for Grove, Bernardy, and Chatzikyriakidis 2021.
-description:         
+description:         Code for the paper 'From compositional semantics to
+                     Bayesian pragmatics via probabilistic inference', which
+                     appears in the proceedings of NALOMA 2021 (https://typo.uni-konstanz.de/naloma21/).
+                     Available at .
 -- bug-reports:
 license:             MIT
 license-file:        LICENSE
