@@ -18,10 +18,6 @@ import FOL.FOL
 import FOL.Solver
 import Representations.Bayesian.Bayesian
 import qualified Representations.Bayesian.Probability as P
-import Representations.CoqTerm.CoqTerm
-import Representations.Eval.Eval
-import Representations.Print.Print
-
 
 --------------------------------------------------------------------------------
 -- | Monadic application combinators

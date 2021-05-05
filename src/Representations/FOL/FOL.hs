@@ -36,9 +36,6 @@ data FolTerm a where
   Forall, Exists :: Type a -> (FolTerm a -> FolTerm Bool) -> FolTerm Bool
   Equals :: FolTerm a -> FolTerm a -> FolTerm Bool
   Ctx :: Gamma (FolTerm a) -> FolTerm (Gamma a)
-  -- Empty :: Context a FolTerm => FolTerm (Gamma a)
-  -- Upd :: Context a FolTerm
-      -- => FolTerm a -> FolTerm (Gamma a) -> FolTerm (Gamma a)
   Sel :: Context a FolTerm => FolTerm (Gamma a) -> FolTerm a
   Type :: Type a -> FolTerm Bool
 
