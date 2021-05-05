@@ -68,14 +68,10 @@ pkgs.stdenv.mkDerivation {
   ];
   # export LOCALE_ARCHIVE=${stdenv.variable.LOCALE_ARCHIVE} # wrong invention
   shellHook = ''
-    # If you are on NixOS, uncomment the following two lines:
-    # export LANG=C.UTF-8
-    # export LC_ALL=C.UTF-8
-
-    # and comment out these two:
-    export LANG=en_US.UTF-8
-    export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
-     
+    export LANG=C.UTF-8
+    export LC_ALL=C.UTF-8
+    # export LANG=en_US.UTF-8
+    # export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
     eval $(egrep ^export ${ghc}/bin/ghc)
   '';
 }
