@@ -11,7 +11,7 @@ license:             MIT
 license-file:        LICENSE
 author:              Julian Grove, Jean-Philippe Bernardy, and Stergios Chatzikyriakidis
 maintainer:          julian.grove@gmail.com
--- copyright:
+copyright:           2021
 -- category:
 build-type:          Simple
 extra-source-files:  CHANGELOG.md
@@ -39,8 +39,6 @@ library
                , Cabal
                , gasp
                , statistics
-               , mwc-random
-               , random
                , containers
                , QuickCheck
                , vector
