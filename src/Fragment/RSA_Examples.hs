@@ -80,7 +80,7 @@ ex1 temp npC pC = let runwait = runSentence @FolTerm @Entity @Entity
                              makeBernoulli emacsAnimatePremise 0.2 Prel.>>= \eap ->
                              makeBernoulli tcAnimatePremise 0.2 Prel.>>= \tcap ->
                              let premises = [ewp, tcwp, epp, tcpp, eap, tcap] in
-                               filterByProp premises waitingAnimate Prel.>>
+                             filterByProp premises waitingAnimate Prel.>>
                              filterByProp premises preparedAnimate Prel.>>
                              Prel.return premises
                          , utterance = u
@@ -145,7 +145,7 @@ ex2 temp npC pC = let runwait = runSentence @FolTerm @Entity @Entity
                              makeBernoulli ashleyAnimatePremise 0.9 Prel.>>= \asap ->
                              makeBernoulli amyAnimatePremise 0.9 Prel.>>= \amap ->
                              let premises = [aswp, amwp, assp, amsp, asap, amap] in
-                               filterByProp premises waitingAnimate Prel.>>
+                             filterByProp premises waitingAnimate Prel.>>
                              filterByProp premises seeAnimate Prel.>>
                              Prel.return premises
                          , utterance = u
