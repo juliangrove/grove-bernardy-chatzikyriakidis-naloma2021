@@ -3,9 +3,9 @@ name:                grove-bernardy-chatzikyriakidis-naloma2021
 version:             0.1.0.0
 synopsis:            Code for Grove, Bernardy, and Chatzikyriakidis 2021.
 description:         Code for the paper 'From compositional semantics to
-                     Bayesian pragmatics via probabilistic inference', which
-                     appears in the proceedings of NALOMA 2021 (https://typo.uni-konstanz.de/naloma21/).
-                     Available at .
+                     Bayesian pragmatics via logical inference', which appears
+                     in the proceedings of NALOMA 2021 (https://typo.uni-konstanz.de/naloma21/).
+                     Available at https://www.aclweb.org/anthology/2021.naloma-1.8.
 license:             MIT
 license-file:        LICENSE
 author:              Julian Grove, Jean-Philippe Bernardy, and Stergios Chatzikyriakidis
@@ -28,22 +28,12 @@ library
                  FOL.Solver
                  FOL.Tableau
                  FOL.Unification
-                 
   hs-source-dirs: src
   build-depends: base
                , mtl
                , logict
-               , Cabal
-               , gasp
-               , statistics
                , containers
-               , QuickCheck
-               , vector
-               , process
                , pretty
-               , groom
-               , logict
-
   default-language: Haskell2010
 
 executable rsa
@@ -69,12 +59,7 @@ executable rsa
   build-depends: base
                , mtl
                , logict
-               , gasp
-               , statistics
                , containers
-               , QuickCheck
-               , vector
                , pretty
-               , process
   default-language: Haskell2010
   

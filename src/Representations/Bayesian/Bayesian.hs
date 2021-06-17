@@ -130,7 +130,8 @@ runRSA (RSA gamma utterance alpha npCost pronounCost) =
   let phi = getSels $ snd $ getDepths utterance []
       ds = fst $ getDepths utterance []
       dstr = normalize $ pragmaticListener gamma phi ds alpha npCost pronounCost
-  in map (\ds' -> (ds', lookUp ds' dstr)) $ sequence [ [0 .. d - 1] | d <- ds ]
+  in map (\ds' -> (reverse ds', lookUp ds' dstr)) $
+     sequence [ [0 .. d - 1] | d <- ds ]
 
 makeBernoulli :: FolTerm Bool -> R -> RSpace (FolTerm Bool)
 makeBernoulli t p = do
