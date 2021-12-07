@@ -5,7 +5,7 @@ synopsis:            Code for Grove, Bernardy, and Chatzikyriakidis 2021.
 description:         Code for the paper 'From compositional semantics to
                      Bayesian pragmatics via logical inference', which appears
                      in the proceedings of NALOMA 2021 (https://typo.uni-konstanz.de/naloma21/).
-                     Available at https://www.aclweb.org/anthology/2021.naloma-1.8.
+                     Available at https://aclanthology.org/2021.naloma-1.8/.
 license:             MIT
 license-file:        LICENSE
 author:              Julian Grove, Jean-Philippe Bernardy, and Stergios Chatzikyriakidis

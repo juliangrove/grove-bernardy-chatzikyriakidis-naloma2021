@@ -1,9 +1,9 @@
 # grove-bernardy-chatzikyriakidis-naloma2021
 
 Code for [Grove, Bernardy, and Chatzikyriakidis
-2021](https://iwcs2021.github.io/proceedings/naloma/pdf/2021.naloma-1.8.pdf). You
-should have [Nix](https://nixos.org/) installed. To reproduce the examples from
-the paper, do:
+2021](https://aclanthology.org/2021.naloma-1.8/). You should have
+[Nix](https://nixos.org/) installed. To reproduce the examples from the paper,
+do:
 
 	git clone --recurse-submodules https://github.com/juliangrove/grove-bernardy-chatzikyriakidis-naloma2021 
 	cd grove-bernardy-chatzikyriakidis-naloma2021
